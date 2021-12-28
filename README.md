@@ -1,4 +1,4 @@
-# Meilong Zhaang's personal webpage
+# Meilong Zhang's personal webpage
 
 This is the personal website of Meilong Zhang, which can be visualized at [https://meilongzhang.github.io/](https://meilongzhang.github.io/).
 
