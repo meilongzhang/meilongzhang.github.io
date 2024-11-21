@@ -102,16 +102,16 @@
 
 <div class="row m-0 p-0" style="border-top: 1px solid #ddd; flex-direction: row-reverse;">
     <div class="col-sm-1 mt-2 p-0 pr-1">
-      <h3 class="bibliography-year">2021</h3>
+      <h3 class="bibliography-year">2024</h3>
     </div>
     <div class="col-sm-11 p-0">
       <ol class="bibliography"><li><div class="row m-0 mt-3 p-0">
   <div class="col-sm-1 p-0 abbr">
     
-      
+      <!--
         <a class="badge font-weight-bold light-green darken-1 align-middle" style="width: 65px;" href="https://arxiv.org" target="_blank">
           arXiv
-        </a>
+        </a> -->
       
     
   </div>
@@ -155,7 +155,7 @@
             <!--In ArXiv Preprint -->
           
           
-            2024.
+            Submitted to CVPR 2025.
           
         </p>
       </div>
@@ -172,7 +172,7 @@
         
         
         
-          <a class="badge grey waves-effect font-weight-light mr-1" href="http://arxiv.org/abs/2106.04072" target="_blank">arXiv</a>
+          <!-- <a class="badge grey waves-effect font-weight-light mr-1" href="http://arxiv.org/abs/2106.04072" target="_blank">arXiv</a> -->
         
         
         
@@ -182,7 +182,7 @@
       <div class="col mt-2 p-0">
         <div id="stretcu2021c2f-abstract" class="collapse">
           <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-            When faced with learning challenging new tasks, humans often follow sequences of steps that allow them to incrementally build up the necessary skills for performing these new tasks. However, in machine learning, models are most often trained to solve the target tasks directly.Inspired by human learning, we propose a novel curriculum learning approach which decomposes challenging tasks into sequences of easier intermediate goals that are used to pre-train a model before tackling the target task. We focus on classification tasks, and design the intermediate tasks using an automatically constructed label hierarchy. We train the model at each level of the hierarchy, from coarse labels to fine labels, transferring acquired knowledge across these levels. For instance, the model will first learn to distinguish animals from objects, and then use this acquired knowledge when learning to classify among more fine-grained classes such as cat, dog, car, and truck. Most existing curriculum learning algorithms for supervised learning consist of scheduling the order in which the training examples are presented to the model. In contrast, our approach focuses on the output space of the model. We evaluate our method on several established datasets and show significant performance gains especially on classification problems with many labels. We also evaluate on a new synthetic dataset which allows us to study multiple aspects of our method.
+            LiDAR-based object detection is essential for autonomous driving but remains computationally demanding. Conventional methods use dense feature map representations, leading to significant computational overhead and underutilizing the inherent sparsity of LiDAR data. Recent fully sparse detectors show promise but suffers from missing central object features due to the surface-dominant distribution of LiDAR points. Sparse feature diffusion methods attempt to address this by expanding features within object bounding boxes to cover neighboring regions prior to detection head. However, these approaches have excessive computational demands due to need of large diffusion range for larger objects. In this paper, we propose DFDNet, a fully sparse directional feature diffusion network that introduces a novel adaptive sparse feature realignment module that dynamically projects sparse features along object centerlines prior to feature diffusion. This realignment enables efficient, directional feature diffusion along object centerline. The resulting diffused features are then aggregated via max-pooling to construct a refined feature representation for each object. Our method reduces redundant sparse feature computations, achieving a two-fold reduction in computational load while improving performance over state-of-the-art detectors on the Waymo and nuScenes benchmarks.
           </div>
         </div>
       </div>
