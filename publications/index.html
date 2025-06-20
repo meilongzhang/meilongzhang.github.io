@@ -101,6 +101,51 @@
 <p><br /></p>
 
 <div class="row m-0 p-0" style="border-top: 1px solid #ddd; flex-direction: row-reverse;">
+  <div class="col-sm-1 mt-2 p-0 pr-1">
+    <h3 class="bibliography-year">2025</h3>
+  </div>
+  <div class="col-sm-11 p-0">
+    <ol class="bibliography">
+      <li>
+        <div class="row m-0 mt-3 p-0">
+          <div class="col-sm-1 p-0 abbr"></div>
+          <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+            <div id="zhang2025example" class="col p-0">
+              <h5 class="title mb-0">Polar Hierarchical Mamba: Towards Streaming LiDAR Object Detection with Point Clouds as Egocentric Sequences</h5>
+              <div class="author">
+                <nobr><em>Mellon M. Zhang</em>,</nobr>
+                <nobr>Glen Chou,</nobr>
+                <nobr>Saibal Mukhopadhyay</nobr>
+              </div>
+              <div>
+                <p class="periodical font-italic">
+                  Accepted to 4DV @ CVPR 2025, in submission to NeurIPS 2025.
+                </p>
+              </div>
+              <div class="col p-0">
+                <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#zhang2025example-abstract" role="button" aria-expanded="false" aria-controls="zhang2025example-abstract">Abstract</a>
+                <a class="badge grey waves-effect font-weight-light mr-1" href="https://www.arxiv.org/abs/2506.06944" target="_blank">Paper</a>
+              </div>
+              <div class="col mt-2 p-0">
+                <div id="zhang2025example-abstract" class="collapse">
+                  <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+                    Accurate and efficient object detection is essential for autonomous vehicles, where real-time perception requires low latency and high throughput. LiDAR sensors provide robust depth information, but conventional methods process full 360° scans in a single pass, introducing significant delay. Streaming approaches address this by sequentially processing partial scans in the native polar coordinate system, yet they rely on translation-invariant convolutions that are misaligned with polar geometry -- resulting in degraded performance or requiring complex distortion mitigation. Recent Mamba-based state space models (SSMs) have shown promise for LiDAR perception, but only in the full-scan setting, relying on geometric serialization and positional embeddings that are memory-intensive and ill-suited to streaming. We propose Polar Hierarchical Mamba (PHiM), a novel SSM architecture designed for polar-coordinate streaming LiDAR. PHiM uses local bidirectional Mamba blocks for intra-sector spatial encoding and a global forward Mamba for inter-sector temporal modeling, replacing convolutions and positional encodings with distortion-aware, dimensionally-decomposed operations. PHiM sets a new state-of-the-art among streaming detectors on the Waymo Open Dataset, outperforming the previous best by 10\% and matching full-scan baselines at twice the throughput.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+</div>
+
+
+
+    
+
+<div class="row m-0 p-0" style="border-top: 1px solid #ddd; flex-direction: row-reverse;">
     <div class="col-sm-1 mt-2 p-0 pr-1">
       <h3 class="bibliography-year">2024</h3>
     </div>
@@ -123,27 +168,14 @@
       <h5 class="title mb-0">DFDNet: Directional Feature Diffusion for Efficient Fully-Sparse LiDAR Object Detection.</h5>
       <div class="author">
         
-          
-            
               
-                <nobr><em>Meilong Zhang</em>,</nobr>
+                <nobr><em>Mellon M. Zhang</em>,</nobr>
               
             
-          
-        
-          
-            
-              
                 
                   <nobr><a href="https://www.hemantkumawat.com" target="_blank">Hemant Kumawat</a>,</nobr>
-                
               
-            
-          
               and
-          
-            
-              
                 
                   <nobr><a href="https://ece.gatech.edu/directory/saibal-mukhopadhyay" target="_blank">Saibal Mukhopadhyay</a>,</nobr>          
         
@@ -163,14 +195,7 @@
       <div class="col p-0">
         
           <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#zhang2024dfd-abstract" role="button" aria-expanded="false" aria-controls="zhang2024dfd-abstract">Abstract</a>
-        
-        
-        
-        
-        
-        
-        
-        
+      
         
           <a class="badge grey waves-effect font-weight-light mr-1" href="https://drive.google.com/file/d/1alOuBJETN6_9g8akN9pAss1rndmciwDl/view?usp=sharing" target="_blank">Preprint</a>
         
