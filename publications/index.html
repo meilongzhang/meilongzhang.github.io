@@ -124,12 +124,75 @@
               </div>
               <div class="col p-0">
                 <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#zhang2025example-abstract" role="button" aria-expanded="false" aria-controls="zhang2025example-abstract">Abstract</a>
-                <a class="badge grey waves-effect font-weight-light mr-1" href="https://www.arxiv.org/abs/2506.06944" target="_blank">arXiv</a>
+                <a class="badge grey waves-effect font-weight-light mr-1" href="https://www.arxiv.org/abs/2506.06944" target="_blank">pdf</a>
               </div>
               <div class="col mt-2 p-0">
                 <div id="zhang2025example-abstract" class="collapse">
                   <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
                     Accurate and efficient object detection is essential for autonomous vehicles, where real-time perception requires low latency and high throughput. LiDAR sensors provide robust depth information, but conventional methods process full 360° scans in a single pass, introducing significant delay. Streaming approaches address this by sequentially processing partial scans in the native polar coordinate system, yet they rely on translation-invariant convolutions that are misaligned with polar geometry -- resulting in degraded performance or requiring complex distortion mitigation. Recent Mamba-based state space models (SSMs) have shown promise for LiDAR perception, but only in the full-scan setting, relying on geometric serialization and positional embeddings that are memory-intensive and ill-suited to streaming. We propose Polar Hierarchical Mamba (PHiM), a novel SSM architecture designed for polar-coordinate streaming LiDAR. PHiM uses local bidirectional Mamba blocks for intra-sector spatial encoding and a global forward Mamba for inter-sector temporal modeling, replacing convolutions and positional encodings with distortion-aware, dimensionally-decomposed operations. PHiM sets a new state-of-the-art among streaming detectors on the Waymo Open Dataset, outperforming the previous best by 10\% and matching full-scan baselines at twice the throughput.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<div class="row m-0 p-0" style="border-top: 1px solid #ddd; flex-direction: row-reverse;">
+  <div class="col-sm-1 mt-2 p-0 pr-1">
+    <h3 class="bibliography-year">2025</h3>
+  </div>
+  <div class="col-sm-11 p-0">
+    <ol class="bibliography">
+      <li>
+        <div class="row m-0 mt-3 p-0">
+          <div class="col-sm-1 p-0 abbr"></div>
+          <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+            <div id="zhang2025example" class="col p-0">
+              <h5 class="title mb-0">Towards Streaming LiDAR Object Detection with Point Clouds as Egocentric Sequences</h5>
+              <div class="author">
+                <nobr><em>Mellon M. Zhang</em>,</nobr>
+                <nobr><a href="https://glenchou.github.io/" target="_blank">Glen Chou</a>,</nobr>   
+              </div>
+              <div>
+                <p class="periodical font-italic">
+                  Accepted to 4DV @ CVPR 2025.
+                </p>
+              </div>
+              <div class="col p-0">
+                <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#zhang2025example-abstract" role="button" aria-expanded="false" aria-controls="zhang2025example-abstract">Abstract</a>
+                <a class="badge grey waves-effect font-weight-light mr-1" href="https://drive.google.com/file/d/1Kr7taVc91beBuN03f3YrDFGEigRoPoPp/view" target="_blank">pdf</a>
+              </div>
+              <div class="col mt-2 p-0">
+                <div id="zhang2025example-abstract" class="collapse">
+                  <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+                    Accurate and efficient object detection is a crucial component
+for fully autonomous self-driving. LiDAR sensors are employed
+to augment or replace cameras for more robustness in diverse
+driving situations, making object detection on LiDAR point
+clouds a critical area of research and improvement. Traditional
+approaches to LiDAR object detection wait for a full 360 degree
+turn of the scanning sensor before processing the entire point
+cloud in one go, introducing significant latency and lowering
+throughput. Previous streaming approaches use the raw LiDAR
+polar coordinate system to process egocentric partial scans
+of point clouds, but rely on translation-invariant convolutions,
+which are incompatible with polar coordinates and lead to per-
+formance degradation. In this paper, we show that the reliance
+on convolutions is not necessary and propose a Mamba-only
+backbone with Polar Hierarchical Mamba (PHiM) blocks, ag-
+gregating per-point features within each partial scan with a
+local bidirectional state space model and capturing higher-level
+global features in a streaming fashion with a global forward
+state space model. Our model on the Waymo Open dataset
+demonstrates 10% performance improvement from the previous
+leading polar-based detector, featuring state of the art perfor-
+mance among all polar-based methods while being competitive
+with existing Cartesian-based detectors with a 2x improvement
+in processing throughput evaluated as predictions per second.
                   </div>
                 </div>
               </div>
