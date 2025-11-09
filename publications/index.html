@@ -113,7 +113,7 @@
           <div class="col-sm-1 p-0 abbr"></div>
           <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
             <div id="zhang2025phim" class="col p-0">
-              <h5 class="title mb-0">Polar Hierarchical Mamba: Streaming LiDAR Object Detection with Point Clouds as Egocentric Sequences</h5>
+              <h5 class="title mb-0">Towards Streaming LiDAR Object Detection with Point Clouds as Egocentric Sequences</h5>
               <div class="author">
                 <nobr><em>Mellon M. Zhang</em>,</nobr>
                 <nobr><a href="https://glenchou.github.io/" target="_blank">Glen Chou</a>,</nobr>   
@@ -121,7 +121,7 @@
               </div>
               <div>
                 <p class="periodical font-italic">
-                  In submission to NeurIPS 2025.
+                  Accepted to WACV 2026.
                 </p>
               </div>
               <div class="col p-0">
@@ -131,7 +131,7 @@
               <div class="col mt-2 p-0">
                 <div id="zhang2025phim-abstract" class="collapse">
                   <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-                    Accurate and efficient object detection is essential for autonomous vehicles, where real-time perception requires low latency and high throughput. LiDAR sensors provide robust depth information, but conventional methods process full 360° scans in a single pass, introducing significant delay. Streaming approaches address this by sequentially processing partial scans in the native polar coordinate system, yet they rely on translation-invariant convolutions that are misaligned with polar geometry -- resulting in degraded performance or requiring complex distortion mitigation. Recent Mamba-based state space models (SSMs) have shown promise for LiDAR perception, but only in the full-scan setting, relying on geometric serialization and positional embeddings that are memory-intensive and ill-suited to streaming. We propose Polar Hierarchical Mamba (PHiM), a novel SSM architecture designed for polar-coordinate streaming LiDAR. PHiM uses local bidirectional Mamba blocks for intra-sector spatial encoding and a global forward Mamba for inter-sector temporal modeling, replacing convolutions and positional encodings with distortion-aware, dimensionally-decomposed operations. PHiM sets a new state-of-the-art among streaming detectors on the Waymo Open Dataset, outperforming the previous best by 10% and matching full-scan baselines at twice the throughput.
+                    Accurate and low-latency 3D object detection is essential for autonomous driving, where safety hinges on both rapid response and reliable perception. While rotating LiDAR sensors are widely adopted for their robustness and fidelity, current detectors face a trade-off: streaming methods process partial polar sectors on the fly for fast updates but suffer from limited visibility, cross-sector dependencies, and distortions from retrofitted Cartesian designs, whereas full-scan methods achieve higher accuracy but are bottlenecked by the inherent latency of a LiDAR revolution. We propose \textbf{Polar-Fast-Cartesian-Full (PFCF)}, a hybrid detector that combines fast polar processing for intra-sector feature extraction with accurate Cartesian reasoning for full-scene understanding. Central to PFCF is a custom Mamba SSM-based streaming backbone with dimensionally-decomposed convolutions that avoids distortion-heavy planes, enabling parameter-efficient, translation-invariant, and distortion-robust polar representation learning. Local sector features are extracted via this backbone, then accumulated into a sector feature buffer to enable efficient inter-sector communication through a full-scan backbone. PFCF establishes a new Pareto frontier on the Waymo Open dataset, surpassing prior streaming baselines by 10% mAP and matching full-scan accuracy at twice the update rate.
                   </div>
                 </div>
               </div>
@@ -146,7 +146,7 @@
           <div class="col-sm-1 p-0 abbr"></div>
           <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
             <div id="zhang2025streaming" class="col p-0">
-              <h5 class="title mb-0">Towards Streaming LiDAR Object Detection with Point Clouds as Egocentric Sequences</h5>
+              <h5 class="title mb-0">Polar Hierarchical Mamba.</h5>
               <div class="author">
                 <nobr><em>Mellon M. Zhang</em>,</nobr>
                 <nobr><a href="https://glenchou.github.io/" target="_blank">Glen Chou</a></nobr>   
