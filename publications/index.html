@@ -107,6 +107,45 @@
   <div class="col-sm-11 p-0">
     <ol class="bibliography">
 
+
+      <li>
+        <div class="row m-0 mt-3 p-0">
+          <div class="col-sm-1 p-0 abbr"></div>
+          <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+            <div id="zhang2025phim" class="col p-0">
+              <h5 class="title mb-0">MAPS: Preserving Vision-Language Representations via Module-Wise Proximity Scheduling for Better Vision-Language-Action Generalization</h5>
+              <div class="author">
+                <nobr><a href="https://chengyuehuang511.github.io/" target="_blank">Chengyue Huang*</a>,</nobr>
+                <nobr><em>Mellon M. Zhang*</em>,</nobr>
+                <nobr>Robert Azarcon</nobr>
+                <nobr><a href="https://glenchou.github.io/" target="_blank">Glen Chou</a>,</nobr>   
+                <nobr><a href="https://faculty.cc.gatech.edu/~zk15/" target="_blank">Zsolt Kira</a>,</nobr>
+              </div>
+              <div>
+                <p class="periodical font-italic">
+                  In submission to CVPR 2026.
+                </p>
+              </div>
+              <div class="col p-0">
+                <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#zhang2025phim-abstract" role="button" aria-expanded="false" aria-controls="zhang2025phim-abstract">Abstract</a>
+                <a class="badge grey waves-effect font-weight-light mr-1" href="https://www.arxiv.org/abs/2506.06944" target="_blank">pdf</a>
+              </div>
+              <div class="col mt-2 p-0">
+                <div id="zhang2025phim-abstract" class="collapse">
+                  <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+                    Accurate and low-latency 3D object detection is essential for autonomous driving, where safety hinges on both rapid response and reliable perception. While rotating LiDAR sensors are widely adopted for their robustness and fidelity, current detectors face a trade-off: streaming methods process partial polar sectors on the fly for fast updates but suffer from limited visibility, cross-sector dependencies, and distortions from retrofitted Cartesian designs, whereas full-scan methods achieve higher accuracy but are bottlenecked by the inherent latency of a LiDAR revolution. We propose \textbf{Polar-Fast-Cartesian-Full (PFCF)}, a hybrid detector that combines fast polar processing for intra-sector feature extraction with accurate Cartesian reasoning for full-scene understanding. Central to PFCF is a custom Mamba SSM-based streaming backbone with dimensionally-decomposed convolutions that avoids distortion-heavy planes, enabling parameter-efficient, translation-invariant, and distortion-robust polar representation learning. Local sector features are extracted via this backbone, then accumulated into a sector feature buffer to enable efficient inter-sector communication through a full-scan backbone. PFCF establishes a new Pareto frontier on the Waymo Open dataset, surpassing prior streaming baselines by 10% mAP and matching full-scan accuracy at twice the update rate.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+
+
+
+      
+
       <!-- First paper -->
       <li>
         <div class="row m-0 mt-3 p-0">
@@ -117,7 +156,7 @@
               <div class="author">
                 <nobr><em>Mellon M. Zhang</em>,</nobr>
                 <nobr><a href="https://glenchou.github.io/" target="_blank">Glen Chou</a>,</nobr>   
-                <nobr>Saibal Mukhopadhyay</nobr>
+                <nobr><a href="https://ece.gatech.edu/directory/saibal-mukhopadhyay" target="_blank">Saibal Mukhopadhyay</a>,</nobr>
               </div>
               <div>
                 <p class="periodical font-italic">
