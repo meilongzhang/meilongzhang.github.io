@@ -112,7 +112,7 @@
         <div class="row m-0 mt-3 p-0">
           <div class="col-sm-1 p-0 abbr"></div>
           <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
-            <div id="zhang2025phim" class="col p-0">
+            <div id="huang2025maps" class="col p-0">
               <h5 class="title mb-0">MAPS: Preserving Vision-Language Representations via Module-Wise Proximity Scheduling for Better Vision-Language-Action Generalization</h5>
               <div class="author">
                 <nobr><a href="https://chengyuehuang511.github.io/" target="_blank">Chengyue Huang*</a>,</nobr>
@@ -131,9 +131,9 @@
                 <a class="badge grey waves-effect font-weight-light mr-1" href="https://www.arxiv.org/abs/2506.06944" target="_blank">pdf</a>
               </div>
               <div class="col mt-2 p-0">
-                <div id="zhang2025phim-abstract" class="collapse">
+                <div id="huang2025maps-abstract" class="collapse">
                   <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-                    Accurate and low-latency 3D object detection is essential for autonomous driving, where safety hinges on both rapid response and reliable perception. While rotating LiDAR sensors are widely adopted for their robustness and fidelity, current detectors face a trade-off: streaming methods process partial polar sectors on the fly for fast updates but suffer from limited visibility, cross-sector dependencies, and distortions from retrofitted Cartesian designs, whereas full-scan methods achieve higher accuracy but are bottlenecked by the inherent latency of a LiDAR revolution. We propose \textbf{Polar-Fast-Cartesian-Full (PFCF)}, a hybrid detector that combines fast polar processing for intra-sector feature extraction with accurate Cartesian reasoning for full-scene understanding. Central to PFCF is a custom Mamba SSM-based streaming backbone with dimensionally-decomposed convolutions that avoids distortion-heavy planes, enabling parameter-efficient, translation-invariant, and distortion-robust polar representation learning. Local sector features are extracted via this backbone, then accumulated into a sector feature buffer to enable efficient inter-sector communication through a full-scan backbone. PFCF establishes a new Pareto frontier on the Waymo Open dataset, surpassing prior streaming baselines by 10% mAP and matching full-scan accuracy at twice the update rate.
+                    Vision-Language-Action (VLA) models inherit strong priors from pretrained Vision-Language Models (VLMs), but naïve fine-tuning often disrupts these representations and harms generalization. Existing fixes -- freezing modules or applying uniform regularization -- either overconstrain adaptation or ignore the differing roles of VLA components. We present \textbf{MAPS (Module-Wise Proximity Scheduling)}, the first robust fine-tuning framework for VLAs. Through systematic analysis, we uncover an empirical order in which proximity constraints should be relaxed to balance stability and flexibility. MAPS linearly schedules this relaxation, enabling visual encoders to stay close to their pretrained priors while action-oriented language layers adapt more freely. MAPS is parameter-free, data-free, and plug-and-play with existing architectures. Across MiniVLA-VQ, MiniVLA-OFT, OpenVLA-OFT, and benchmarks like LIBERO, CALVIN, and SimplerEnv, MAPS boosts both in- and out-of-distribution performance (up to +25\%). Our findings highlight empirically guided proximity to pretrained VLMs as a simple yet powerful principle for scalable VLA adaptation.
                   </div>
                 </div>
               </div>
@@ -151,7 +151,7 @@
         <div class="row m-0 mt-3 p-0">
           <div class="col-sm-1 p-0 abbr"></div>
           <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
-            <div id="zhang2025phim" class="col p-0">
+            <div id="zhang2025streaming" class="col p-0">
               <h5 class="title mb-0">Towards Streaming LiDAR Object Detection with Point Clouds as Egocentric Sequences</h5>
               <div class="author">
                 <nobr><em>Mellon M. Zhang</em>,</nobr>
@@ -168,7 +168,7 @@
                 <a class="badge grey waves-effect font-weight-light mr-1" href="https://www.arxiv.org/abs/2506.06944" target="_blank">pdf</a>
               </div>
               <div class="col mt-2 p-0">
-                <div id="zhang2025phim-abstract" class="collapse">
+                <div id="zhang2025streaming-abstract" class="collapse">
                   <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
                     Accurate and low-latency 3D object detection is essential for autonomous driving, where safety hinges on both rapid response and reliable perception. While rotating LiDAR sensors are widely adopted for their robustness and fidelity, current detectors face a trade-off: streaming methods process partial polar sectors on the fly for fast updates but suffer from limited visibility, cross-sector dependencies, and distortions from retrofitted Cartesian designs, whereas full-scan methods achieve higher accuracy but are bottlenecked by the inherent latency of a LiDAR revolution. We propose \textbf{Polar-Fast-Cartesian-Full (PFCF)}, a hybrid detector that combines fast polar processing for intra-sector feature extraction with accurate Cartesian reasoning for full-scene understanding. Central to PFCF is a custom Mamba SSM-based streaming backbone with dimensionally-decomposed convolutions that avoids distortion-heavy planes, enabling parameter-efficient, translation-invariant, and distortion-robust polar representation learning. Local sector features are extracted via this backbone, then accumulated into a sector feature buffer to enable efficient inter-sector communication through a full-scan backbone. PFCF establishes a new Pareto frontier on the Waymo Open dataset, surpassing prior streaming baselines by 10% mAP and matching full-scan accuracy at twice the update rate.
                   </div>
@@ -184,7 +184,7 @@
         <div class="row m-0 mt-3 p-0">
           <div class="col-sm-1 p-0 abbr"></div>
           <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
-            <div id="zhang2025streaming" class="col p-0">
+            <div id="zhang2025phim" class="col p-0">
               <h5 class="title mb-0">Polar Hierarchical Mamba</h5>
               <div class="author">
                 <nobr><em>Mellon M. Zhang</em>,</nobr>
@@ -200,7 +200,7 @@
                 <a class="badge grey waves-effect font-weight-light mr-1" href="https://drive.google.com/file/d/1Kr7taVc91beBuN03f3YrDFGEigRoPoPp/view" target="_blank">pdf</a>
               </div>
               <div class="col mt-2 p-0">
-                <div id="zhang2025streaming-abstract" class="collapse">
+                <div id="zhang2025phim-abstract" class="collapse">
                   <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
                     Accurate and efficient object detection is a crucial component for fully autonomous self-driving. LiDAR sensors are employed to augment or replace cameras for more robustness in diverse driving situations, making object detection on LiDAR point clouds a critical area of research and improvement. Traditional approaches to LiDAR object detection wait for a full 360 degree turn of the scanning sensor before processing the entire point cloud in one go, introducing significant latency and lowering throughput. Previous streaming approaches use the raw LiDAR polar coordinate system to process egocentric partial scans of point clouds, but rely on translation-invariant convolutions, which are incompatible with polar coordinates and lead to performance degradation. In this paper, we show that the reliance on convolutions is not necessary and propose a Mamba-only backbone with Polar Hierarchical Mamba (PHiM) blocks, aggregating per-point features within each partial scan with a local bidirectional state space model and capturing higher-level global features in a streaming fashion with a global forward state space model. Our model on the Waymo Open dataset demonstrates 10% performance improvement from the previous leading polar-based detector, featuring state of the art performance among all polar-based methods while being competitive with existing Cartesian-based detectors with a 2x improvement in processing throughput evaluated as predictions per second.
                   </div>
